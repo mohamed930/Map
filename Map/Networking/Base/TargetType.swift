@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 var baseUrl = "http://inaclick.online/mtc/"
-var checkCredentialsPoint = "/account/checkCredentials"
+var checkCredentialsPoint = "account/checkCredentials"
 
 enum HTTPMethod : String {
     case get = "GET"

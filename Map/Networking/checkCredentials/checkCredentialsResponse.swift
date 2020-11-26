@@ -19,9 +19,10 @@ class checkCredentialsResponse: Decodable {
 
 class InnerData : Decodable {
     var tocken: String
-    //var user: user
+    var user: user
     
     enum CodingKeys: String,CodingKey {
         case tocken = "token"
+        case user
     }
 }

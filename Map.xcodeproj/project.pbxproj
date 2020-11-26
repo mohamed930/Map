@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A0992DA4701D3C50F6F291D /* Pods_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1524655A7A08B4F82E1CB90 /* Pods_Map.framework */; };
+		D367333325704C0D0074B4DF /* bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333225704C0D0074B4DF /* bus.swift */; };
+		D367333625704CA10074B4DF /* route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333525704CA10074B4DF /* route.swift */; };
+		D367333925704E2C0074B4DF /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333825704E2C0074B4DF /* Dimension.swift */; };
 		D3BE3E71256FC213005ECC49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE3E70256FC213005ECC49 /* AppDelegate.swift */; };
 		D3BE3E75256FC213005ECC49 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE3E74256FC213005ECC49 /* MapViewController.swift */; };
 		D3BE3E78256FC213005ECC49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BE3E76256FC213005ECC49 /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 
 /* Begin PBXFileReference section */
 		A1B127B24E4F16C864EB80A4 /* Pods-Map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.release.xcconfig"; path = "Target Support Files/Pods-Map/Pods-Map.release.xcconfig"; sourceTree = "<group>"; };
+		D367333225704C0D0074B4DF /* bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bus.swift; sourceTree = "<group>"; };
+		D367333525704CA10074B4DF /* route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = route.swift; sourceTree = "<group>"; };
+		D367333825704E2C0074B4DF /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
 		D3BE3E6D256FC213005ECC49 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BE3E70256FC213005ECC49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3BE3E74256FC213005ECC49 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				D3BE3EB2256FF093005ECC49 /* user.swift */,
+				D367333225704C0D0074B4DF /* bus.swift */,
+				D367333525704CA10074B4DF /* route.swift */,
+				D367333825704E2C0074B4DF /* Dimension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +316,9 @@
 				D3BE3EA3256FEAC2005ECC49 /* ErrorMessage.swift in Sources */,
 				D3BE3EA8256FEC01005ECC49 /* checkCredentialsNetworking.swift in Sources */,
 				D3BE3EAF256FEFF6005ECC49 /* checkCredentialsResponse.swift in Sources */,
+				D367333925704E2C0074B4DF /* Dimension.swift in Sources */,
+				D367333625704CA10074B4DF /* route.swift in Sources */,
+				D367333325704C0D0074B4DF /* bus.swift in Sources */,
 				D3BE3E9F256FEA5A005ECC49 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

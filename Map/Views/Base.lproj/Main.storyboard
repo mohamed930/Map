@@ -20,7 +20,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="456-fi-jRS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-Soccer_ball" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-DJ-2IZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lY5-DJ-2IZ">
                                 <rect key="frame" x="269" y="664" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="TIT-Ln-G1M"/>
@@ -40,6 +40,7 @@
                         </constraints>
                         <connections>
                             <outlet property="ProfileImage" destination="lY5-DJ-2IZ" id="8FH-Wy-Oyl"/>
+                            <outlet property="mapView" destination="456-fi-jRS" id="2BE-jB-TQH"/>
                         </connections>
                     </view>
                 </viewController>
@@ -49,7 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1200px-Soccer_ball" width="300" height="300"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

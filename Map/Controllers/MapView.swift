@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import MapKit
 
 class MapView: UIView {
     @IBOutlet weak var ProfileImage: UIImageView!
+    @IBOutlet weak var mapView:MKMapView!
 }
