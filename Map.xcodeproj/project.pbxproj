@@ -11,6 +11,13 @@
 		D367333325704C0D0074B4DF /* bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333225704C0D0074B4DF /* bus.swift */; };
 		D367333625704CA10074B4DF /* route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333525704CA10074B4DF /* route.swift */; };
 		D367333925704E2C0074B4DF /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333825704E2C0074B4DF /* Dimension.swift */; };
+		D367333D2570DE150074B4DF /* UIVViewController-SLPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367333C2570DE150074B4DF /* UIVViewController-SLPopup.swift */; };
+		D36733482570E1780074B4DF /* AboutUsDialogeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36733462570E1780074B4DF /* AboutUsDialogeViewController.swift */; };
+		D36733492570E1780074B4DF /* AboutUsDialogeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36733472570E1780074B4DF /* AboutUsDialogeViewController.xib */; };
+		D367334D2570E7A60074B4DF /* AboutUsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367334C2570E7A60074B4DF /* AboutUsNetworking.swift */; };
+		D36733502570E7D30074B4DF /* AboutUsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D367334F2570E7D30074B4DF /* AboutUsAPI.swift */; };
+		D36733522570E7E40074B4DF /* AboutUsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36733512570E7E40074B4DF /* AboutUsResponse.swift */; };
+		D36733552570F2270074B4DF /* AboutUsDialogueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36733542570F2270074B4DF /* AboutUsDialogueView.swift */; };
 		D3BE3E71256FC213005ECC49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE3E70256FC213005ECC49 /* AppDelegate.swift */; };
 		D3BE3E75256FC213005ECC49 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE3E74256FC213005ECC49 /* MapViewController.swift */; };
 		D3BE3E78256FC213005ECC49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BE3E76256FC213005ECC49 /* Main.storyboard */; };
@@ -31,6 +38,13 @@
 		D367333225704C0D0074B4DF /* bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bus.swift; sourceTree = "<group>"; };
 		D367333525704CA10074B4DF /* route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = route.swift; sourceTree = "<group>"; };
 		D367333825704E2C0074B4DF /* Dimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		D367333C2570DE150074B4DF /* UIVViewController-SLPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVViewController-SLPopup.swift"; sourceTree = "<group>"; };
+		D36733462570E1780074B4DF /* AboutUsDialogeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsDialogeViewController.swift; sourceTree = "<group>"; };
+		D36733472570E1780074B4DF /* AboutUsDialogeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsDialogeViewController.xib; sourceTree = "<group>"; };
+		D367334C2570E7A60074B4DF /* AboutUsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsNetworking.swift; sourceTree = "<group>"; };
+		D367334F2570E7D30074B4DF /* AboutUsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsAPI.swift; sourceTree = "<group>"; };
+		D36733512570E7E40074B4DF /* AboutUsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsResponse.swift; sourceTree = "<group>"; };
+		D36733542570F2270074B4DF /* AboutUsDialogueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsDialogueView.swift; sourceTree = "<group>"; };
 		D3BE3E6D256FC213005ECC49 /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BE3E70256FC213005ECC49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3BE3E74256FC213005ECC49 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +91,16 @@
 				F1524655A7A08B4F82E1CB90 /* Pods_Map.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D367334B2570E7740074B4DF /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				D367334C2570E7A60074B4DF /* AboutUsNetworking.swift */,
+				D367334F2570E7D30074B4DF /* AboutUsAPI.swift */,
+				D36733512570E7E40074B4DF /* AboutUsResponse.swift */,
+			);
+			path = AboutUs;
 			sourceTree = "<group>";
 		};
 		D3BE3E64256FC212005ECC49 = {
@@ -132,6 +156,9 @@
 			children = (
 				D3BE3E76256FC213005ECC49 /* Main.storyboard */,
 				D3BE3E7B256FC23C005ECC49 /* LaunchScreen.storyboard */,
+				D36733462570E1780074B4DF /* AboutUsDialogeViewController.swift */,
+				D36733472570E1780074B4DF /* AboutUsDialogeViewController.xib */,
+				D36733542570F2270074B4DF /* AboutUsDialogueView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +166,7 @@
 		D3BE3E8C256FC73C005ECC49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D367333C2570DE150074B4DF /* UIVViewController-SLPopup.swift */,
 				D3BE3E79256FC23C005ECC49 /* Assets.xcassets */,
 				D3BE3E7E256FC23C005ECC49 /* Info.plist */,
 			);
@@ -149,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D3BE3EA6256FEBCB005ECC49 /* checkCredentials */,
+				D367334B2570E7740074B4DF /* AboutUs */,
 				D3BE3E9A256FE95A005ECC49 /* Base */,
 				D3BE3EA1256FEAA9005ECC49 /* Error */,
 			);
@@ -252,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36733492570E1780074B4DF /* AboutUsDialogeViewController.xib in Resources */,
 				D3BE3E7D256FC23C005ECC49 /* LaunchScreen.storyboard in Resources */,
 				D3BE3E7A256FC23C005ECC49 /* Assets.xcassets in Resources */,
 				D3BE3E78256FC213005ECC49 /* Main.storyboard in Resources */,
@@ -310,14 +340,20 @@
 				D3BE3EB3256FF093005ECC49 /* user.swift in Sources */,
 				D3BE3E9C256FE998005ECC49 /* TargetType.swift in Sources */,
 				D3BE3E75256FC213005ECC49 /* MapViewController.swift in Sources */,
+				D36733482570E1780074B4DF /* AboutUsDialogeViewController.swift in Sources */,
+				D36733522570E7E40074B4DF /* AboutUsResponse.swift in Sources */,
 				D3BE3EAC256FEF39005ECC49 /* checkCredentialsAPI.swift in Sources */,
 				D3BE3E97256FCB7C005ECC49 /* MapView.swift in Sources */,
 				D3BE3E71256FC213005ECC49 /* AppDelegate.swift in Sources */,
 				D3BE3EA3256FEAC2005ECC49 /* ErrorMessage.swift in Sources */,
 				D3BE3EA8256FEC01005ECC49 /* checkCredentialsNetworking.swift in Sources */,
+				D36733502570E7D30074B4DF /* AboutUsAPI.swift in Sources */,
 				D3BE3EAF256FEFF6005ECC49 /* checkCredentialsResponse.swift in Sources */,
 				D367333925704E2C0074B4DF /* Dimension.swift in Sources */,
 				D367333625704CA10074B4DF /* route.swift in Sources */,
+				D36733552570F2270074B4DF /* AboutUsDialogueView.swift in Sources */,
+				D367333D2570DE150074B4DF /* UIVViewController-SLPopup.swift in Sources */,
+				D367334D2570E7A60074B4DF /* AboutUsNetworking.swift in Sources */,
 				D367333325704C0D0074B4DF /* bus.swift in Sources */,
 				D3BE3E9F256FEA5A005ECC49 /* BaseAPI.swift in Sources */,
 			);
@@ -468,14 +504,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X4YZSY77G5;
+				DEVELOPMENT_TEAM = 6NBM9PQRD2;
 				INFOPLIST_FILE = "$(SRCROOT)/Map/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MyCompany199.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany198.Map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -489,14 +525,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X4YZSY77G5;
+				DEVELOPMENT_TEAM = 6NBM9PQRD2;
 				INFOPLIST_FILE = "$(SRCROOT)/Map/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MyCompany199.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = MyCompany198.Map;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

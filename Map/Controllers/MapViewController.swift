@@ -14,6 +14,7 @@ class MapViewController: UIViewController {
     
     var latituideArr = [Double]()
     var longtuideArr = [Double]()
+    var Tocken = String()
     
     var mapview: MapView! {
         guard isViewLoaded else { return nil }
@@ -35,7 +36,13 @@ class MapViewController: UIViewController {
     
     // MARK:- TODO:- This Method For Image Tap Action
     @objc func ShowDialogue (tapGestureRecognizer: UITapGestureRecognizer) {
-        print("Hello New Task is Tomorrow!")
+        
+        let AboutPop: AboutUsDialogeViewController = AboutUsDialogeViewController(nibName: "AboutUsDialogeViewController", bundle: nil)
+        self.view.alpha = 1.0
+        AboutPop.delegate = self
+        AboutPop.UserTocken = self.Tocken
+        self.presentpopupViewController(popupViewController: AboutPop, animationType: .Fade, completion: {() -> Void in })
+        
     }
     
     func LoadData () {
@@ -51,6 +58,7 @@ class MapViewController: UIViewController {
                 if ob?.status == true {
                     
                     self.getPhoto(URL: (ob?.InnerData.user.PhotoLink)!, Image: self.mapview.ProfileImage)
+                    self.Tocken = (ob?.InnerData.tocken)!
                     
                     for i in 0...((ob?.InnerData.user.bus.route.routePath.count)! - 1) {
                         self.latituideArr.append((ob?.InnerData.user.bus.route.routePath[i].latitude)!)
@@ -59,9 +67,9 @@ class MapViewController: UIViewController {
                     
                     self.DrawLine(longArr: self.longtuideArr, latitArr: self.latituideArr)
                     
-                    for i in 0...((ob?.InnerData.user.bus.route.stopPoints.count)! - 1) {
+                    for i in (ob?.InnerData.user.bus.route.stopPoints)! {
                         
-                        self.MakeLocation(Title: "Stop Points", SubTitle: "Bus Stop here", lati: (ob?.InnerData.user.bus.route.stopPoints[i].latitude)!, long: (ob?.InnerData.user.bus.route.stopPoints[i].longtitude)!)
+                        self.MakeLocation(Title: "Stop Points", SubTitle: "Bus Stop here", lati: (i.latitude), long: (i.longtitude))
                     }
                 }
                 
@@ -159,3 +167,10 @@ extension MapViewController: MKMapViewDelegate {
     }
 }
 
+extension MapViewController: PopupProtocol {
+    
+    func Back() {
+        self.dismissPopupViewController(animationType: .BottomBottom)
+    }
+    
+}
