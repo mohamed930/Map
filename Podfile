@@ -8,5 +8,6 @@ target 'Map' do
   # Pods for Map
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'ProgressHUD'
 
 end

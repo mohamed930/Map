@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import ProgressHUD
 
 protocol PopupProtocol {
     func Back()
@@ -51,7 +52,7 @@ class AboutUsDialogeViewController: UIViewController {
                 }
                 
             case .failure(let error):
-                print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
+                ProgressHUD.showError(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
             }
             
         }

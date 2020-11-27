@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import MapKit
+import ProgressHUD
 
 class MapViewController: UIViewController {
     
@@ -74,7 +75,7 @@ class MapViewController: UIViewController {
                 }
                 
             case .failure(let error):
-                print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
+                ProgressHUD.showError(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
             }
             
         }
@@ -94,7 +95,7 @@ class MapViewController: UIViewController {
                         Image.image = scaleImage
                     }
                 case .failure(_):
-                    print("Error Connection")
+                    ProgressHUD.showError("Error Connection")
             }
             
         })
@@ -109,7 +110,7 @@ class MapViewController: UIViewController {
         mapview.mapView.addAnnotation(anotation)
         anotation.title = Title
         anotation.subtitle = SubTitle
-        let range = MKCoordinateRegion(center: anotation.coordinate, latitudinalMeters: 200, longitudinalMeters: 200)
+        let range = MKCoordinateRegion(center: anotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         mapview.mapView.setRegion(range, animated: true)
         
     }

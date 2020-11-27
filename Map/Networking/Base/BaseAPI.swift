@@ -55,7 +55,7 @@ class BaseAPI<T:TargetType> {
                 let error = NSError(domain: Target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.message])
                 completion(.failure(error))
                 
-                /*guard let jsonResponse = try? response.result.get() else {
+                guard let jsonResponse = try? response.result.get() else {
                     // ADD Custom Error
                     let error = NSError(domain: Target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.message1])
                     completion(.failure(error))
@@ -76,11 +76,11 @@ class BaseAPI<T:TargetType> {
                     return
                 }
                 
-                if responseObj.status == "-1" {
-                    ErrorMessage.ResponseMessgae = responseObj.error.message
+                if responseObj.status == false {
+                    ErrorMessage.ResponseMessgae = responseObj.message
                     let error = NSError(domain: Target.baseURL, code: statusCode, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.ResponseMessgae!])
                     completion(.failure(error))
-                }*/
+                }
             }
             
         }
